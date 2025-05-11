@@ -1,0 +1,21 @@
+.nav-custom {
+    font-weight: 500;
+    color: #2c3e50;
+    position: relative;
+  }
+
+  .nav-custom:hover,
+  .nav-custom.active {
+    color: #e74c3c; /* Rojo al pasar o activo */
+  }
+
+  .nav-custom.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #e74c3c;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
