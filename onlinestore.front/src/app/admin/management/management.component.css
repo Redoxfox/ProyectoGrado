@@ -1,31 +1,31 @@
+table img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f8f9fa;
-  }
-  .sidebar {
-    height: 100vh;
-    background-color: #f1f3f5;
-    padding: 1rem;
-  }
-  .sidebar h6 {
-    margin-top: 2rem;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    color: #6c757d;
-  }
-  .sidebar a {
-    display: block;
-    color: #333;
-    padding: 0.5rem;
-    text-decoration: none;
-    border-radius: 0.25rem;
-  }
-  .sidebar a.active, .sidebar a:hover {
-    background-color: #dee2e6;
-    font-weight: bold;
-  }
-  .header {
-    background-color: #fff;
-    padding: 1rem;
-    border-bottom: 1px solid #dee2e6;
-  }
+  overflow-x: hidden;
+}
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-right: 1px solid #dee2e6;
+}
+.main-content {
+  margin-left: 260px;
+  padding: 2rem;
+}
+.accordion-button {
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+}
+.nav-link {
+  font-size: 0.9rem;
+  padding-left: 2rem;
+}

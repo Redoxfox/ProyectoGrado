@@ -8,6 +8,11 @@ import { HomeComponent } from './public/home/home.component';
 import { DetailsComponent } from './public/details/details.component';
 import { DashboardComponent } from './user/dashboard/dashboard.component';
 import { ManagementComponent } from './admin/management/management.component';
+import { OrdersComponent } from './admin/orders/orders.component';
+import { CustomersComponent } from './admin/customers/customers.component';
+import { SuppliersComponent } from './admin/suppliers/suppliers.component';
+import { InventoryComponent } from './admin/inventory/inventory.component';
+import { HeaderadComponent } from './layouts/headerad/headerad.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home', pathMatch:'full'},
@@ -16,8 +21,11 @@ const routes: Routes = [
   {path:'details/:id', component:DetailsComponent},
   {path:'dashboard', component:DashboardComponent},
   {path:'management', component:ManagementComponent},
+  {path:'inventory', component:ManagementComponent},
+  {path:'suppliers', component:ManagementComponent},
+  {path:'customers', component:ManagementComponent},
+  {path:'orders', component:ManagementComponent},
 ];
-
 
 
 @NgModule({
@@ -35,5 +43,12 @@ export const  AppRoutingComponent = [
   DetailsComponent,
   DashboardComponent,
   ManagementComponent,
+  DashboardComponent,
+  ManagementComponent,
+  OrdersComponent,
+  CustomersComponent,
+  SuppliersComponent,
+  InventoryComponent,
+  HeaderadComponent,
 ];
 
