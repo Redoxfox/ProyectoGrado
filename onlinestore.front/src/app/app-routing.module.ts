@@ -13,7 +13,8 @@ import { CustomersComponent } from './admin/customers/customers.component';
 import { SuppliersComponent } from './admin/suppliers/suppliers.component';
 import { InventoryComponent } from './admin/inventory/inventory.component';
 import { HeaderadComponent } from './layouts/headerad/headerad.component';
-
+import { CategoriesComponent } from './admin/categories/categories.component';
+import { ProductsComponent } from './admin/products/products.component';
 const routes: Routes = [
   {path:'',redirectTo:'home', pathMatch:'full'},
   {path:'register', component:RegisterComponent},
@@ -21,10 +22,12 @@ const routes: Routes = [
   {path:'details/:id', component:DetailsComponent},
   {path:'dashboard', component:DashboardComponent},
   {path:'management', component:ManagementComponent},
-  {path:'inventory', component:ManagementComponent},
-  {path:'suppliers', component:ManagementComponent},
-  {path:'customers', component:ManagementComponent},
-  {path:'orders', component:ManagementComponent},
+  {path:'inventory', component:InventoryComponent},
+  {path:'suppliers', component:SuppliersComponent},
+  {path:'customers', component:CustomersComponent},
+  {path:'orders', component:OrdersComponent},
+  {path:'categories', component:CategoriesComponent},
+  {path:'products', component:ProductsComponent},
 ];
 
 
@@ -50,5 +53,7 @@ export const  AppRoutingComponent = [
   SuppliersComponent,
   InventoryComponent,
   HeaderadComponent,
+  CategoriesComponent,
+  ProductsComponent,
 ];
 

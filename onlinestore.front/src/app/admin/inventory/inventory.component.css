@@ -1,0 +1,31 @@
+table img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+body {
+  overflow-x: hidden;
+}
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-right: 1px solid #dee2e6;
+}
+.main-content {
+  margin-left: 260px;
+  padding: 2rem;
+}
+.accordion-button {
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+}
+.nav-link {
+  font-size: 0.9rem;
+  padding-left: 2rem;
+}
